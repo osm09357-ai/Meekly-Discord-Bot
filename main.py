@@ -12,7 +12,7 @@ import aiosqlite
 # LOAD ENV
 # =========================
 load_dotenv()
-TOKEN = ("TOKEN")
+TOKEN = os.getenv("TOKEN")
 if not TOKEN:
     raise RuntimeError("TOKEN not found in .env file")
 
