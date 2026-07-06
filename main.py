@@ -12,16 +12,16 @@ import aiosqlite
 # LOAD ENV
 # =========================
 load_dotenv()
-TOKEN = os.getenv("TOKEN")
+TOKEN = "TOKEN")
 if not TOKEN:
     raise RuntimeError("TOKEN not found in .env file")
 
 # =========================
 # BASIC CONFIG
 # =========================
-OWNER_ID = 870179991462236170
-DEV_ID = 870179991462236170
-DEVELOPER_IDS = [870179991462236170]
+OWNER_ID = 1184984383598383144
+DEV_ID = 1184984383598383144
+DEVELOPER_IDS = [1184984383598383144]
 DEFAULT_PREFIX = "+"
 
 CORE_DB = Path("db/core.db")
